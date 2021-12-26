@@ -24,6 +24,10 @@ export class TaskComponent implements OnInit {
     this.onArchiveTask.emit(id);
   }
 
+  clicky(){
+    console.log('clocked!!!');
+  }
+
 }
 
 export interface Task {

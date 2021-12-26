@@ -5,6 +5,7 @@
         type="checkbox"
         [defaultChecked]="task?.state === 'TASK_ARCHIVED'"
         name="checked"
+        (click)='clicky()'
       />
       <span class="checkbox-custom" (click)="onArchive(task.id)"></span>
     </label>

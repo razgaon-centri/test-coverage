@@ -6,6 +6,13 @@ describe('ui-lib', () => {
   });
   it('should click checkbox', () => {
     cy.get('task-item').get('#myCB').click();
+    cy.get('task-item').get('#myCB').click();
+  })
+
+  it('should click checkbox1', () => {
+    cy.get('task-item').get('#myCB').click();
+    cy.get('task-item').get('#myCB').click();
+    cy.get('task-item').get('#myCB').click();
   })
 
   context('archived', () => {
